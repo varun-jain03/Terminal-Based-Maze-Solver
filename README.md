@@ -22,10 +22,7 @@
 2. Generate Another Puzzle: Create a new random maze.
 3. Exit the Game: Terminate the program.</p>
 
-## Clone repository from github
 
-- bash git clone
-```https://github.com/kumarroshan123/Terminal_Based_Maze_Solver.git ```
 
 ## How to Run
 <p>To run the program, execute the Python script. Upon launching, the user will be prompted to enter the size of the maze. The program will then display the maze and provide options for interacting with the generated puzzle.</p>
