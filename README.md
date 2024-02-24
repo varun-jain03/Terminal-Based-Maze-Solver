@@ -1,32 +1,41 @@
-# Terminal-Based-Maze-Solver
-develop a terminal-based application that generates a random maze, finds a path
-from the start to the end, and visualizes the maze and path in the terminal.
+# Terminal_Based_Maze_Solver
+## Overview
+<p>The "Terminal Based Maze Solver" project is a Python implementation of a maze generation and solving algorithm. The project includes a maze generator that creates a random maze with a specified size and starting (S) and ending (E) points. Additionally, it features a depth-first search (DFS) algorithm to find a path from the starting point to the ending point in the generated maze. </p>
 
-<h1>Input:</h1>
-1. Size of the maze ( ).
+## Components
+### Maze Generation
+<p>The maze generation utilizes a stack-based algorithm to create a random maze. The algorithm ensures that there is only one path between the starting and ending points, making the maze solvable. The generated maze consists of cells marked as follows:
 
-2. Users choose to either print the path, generate another puzzle, or exit the game.
+0: Wall(▓)
+1: Open path(◌)
+2: Starting point (S)
+3: Ending point (E)
+4: Path(◍)</p>
 
+### Depth-First Search (DFS)
+<p>The DFS algorithm is employed to find a path from the starting point to the ending point in the generated maze. The DFS explores possible paths, backtracking when necessary, until it successfully reaches the destination. The path is then displayed, and the maze with the path is printed.</p>
 
-<p>Output:</p>
-1. A visual representation of the generated maze in the terminal.
-2D
+### User Interaction
+<p>The user can interact with the program through a simple console interface with the following options:
 
+1. Print the Path: Display the solution path in the generated maze.
+2. Generate Another Puzzle: Create a new random maze.
+3. Exit the Game: Terminate the program.</p>
 
-<p>DSA Project Documentation 2</p>
-2. A visual representation of the path from start to end, if it exists.
-Rules:
-1. The maze is represented as a array where each cell can be either a wall or
-an open space.
-2. The top-left corner is the start ( ) and the bottom-right corner is the end ( ).
-3. The application should provide options to print the path, generate another
-puzzle, or exit the game.
-4. The number of random walls should be restricted to be less than or equal to
-% of the total cells to increase the likelihood of a solvable maze.
+## Clone repository from github
 
+- bash git clone
+```https://github.com/kumarroshan123/Terminal_Based_Maze_Solver.git ```
 
-<p>Guidelines:</p>
-1. Generate a random maze of size with walls and open spaces.
-2. Implement a pathfinding algorithm to find a path from the start to the end.
-3. Visualize the maze and the path in the terminal.
-4. Provide options to the user for further actions.
+## How to Run
+<p>To run the program, execute the Python script. Upon launching, the user will be prompted to enter the size of the maze. The program will then display the maze and provide options for interacting with the generated puzzle.</p>
+
+## Dependencies
+<p>The project has no external dependencies beyond the standard Python library.</p>
+
+## Additional Notes
+
+1. The maze generator ensures that there is a solvable path from the starting point to the ending point.
+2. The DFS algorithm employs a recursive approach to explore possible paths within the maze.
+3. The solution path is marked with a different symbol ("-1") in the displayed maze.
+
