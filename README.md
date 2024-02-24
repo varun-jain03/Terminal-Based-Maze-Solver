@@ -2,10 +2,9 @@
 develop a terminal-based application that generates a random maze, finds a path
 from the start to the end, and visualizes the maze and path in the terminal.
 
-
-<p>Specifications:</p>
-<p>Input:</p>
+<h1>Input:</h1>
 1. Size of the maze ( ).
+
 2. Users choose to either print the path, generate another puzzle, or exit the game.
 
 
